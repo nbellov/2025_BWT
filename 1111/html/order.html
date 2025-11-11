@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформить заказ - Брасткий Винил</title>
+    <link rel="stylesheet" href="../css/order.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">Братский Винил</div>
+            <div class="tagline">Магазин сваговых пластинок</div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="home.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог пластинок</a></li>
+                <li><a href="order.html" class="active">Оформить заказ</a></li>
+                <li><a href="rewiew.html">Оставить отзыв</a></li>
+                <li><a href="inform.html">О магазине</a></li>
+                <li><a href="passport.html">Паспорт</a></li>
+                <li><a href="algoritm.html">Алгоритмическая задача</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-content">
+            <section class="section">
+                <h2>🛒 Оформление заказа</h2>
+                <p>Заполните форму ниже для оформления заказа виниловых пластинок. Все поля обязательны для заполнения.
+                </p>
+            </section>
+
+            <!-- Order Form -->
+            <div class="form-container">
+                <form action="https://www.bing.com/search?" target="_blank"  method="get" id="orderForm">
+                    <input type="hidden" name="q" value="search">
+                    <input type="hidden" name="form_type" value="vinyl_order">
+                    
+
+                    <!-- Personal Data Section -->
+                    <div class="form-box">
+                        <h3>👤 Личные данные</h3>
+
+                        <div class="form-group">
+                            <label for="last_name">Фамилия:</label>
+                            <input type="text" id="last_name" name="last_name" placeholder="Фамилия" value="" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="first_name">Имя:</label>
+                            <input type="text" id="first_name" name="first_name" placeholder="Имя" value="" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Мобильный телефон:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Ваши цифры" value="" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Электронная почта:</label>
+                            <input type="email" id="email" name="email" placeholder="@" value="pussy_eat@gmail.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="submission_date">Дата отправки:</label>
+                            <input type="date" id="submission_date" name="submission_date" required>
+                        </div>
+                    </div>
+
+                    <!-- Order Details Section -->
+                    <div class="form-box">
+                        <h3>📦 Данные заказа</h3>
+
+                        <div class="form-group">
+                            <label for="album_name">Название альбома:</label>
+                            <input type="text" id="album_name" name="album_name"  placeholder="Пример: The Beatles - Abbey Road" value=""
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="quantity">Количество:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="vinyl_condition">Состояние пластинки:</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" id="new" name="condition" value="new" checked>
+                                    <label for="new">Новая (запечатанная)</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="used_excellent" name="condition" value="used_excellent">
+                                    <label for="used_excellent">Б/у отличное состояние</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="used_good" name="condition" value="used_good">
+                                    <label for="used_good">Б/у поддержанное состояние</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Дополнительные услуги:</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="cleaning" name="services" value="cleaning" checked>
+                                    <label for="cleaning">Профессиональная чистка</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="protective_sleeve" name="services"
+                                        value="protective_sleeve">
+                                    <label for="protective_sleeve">Защитный конверт</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="gift_wrap" name="services" value="gift_wrap">
+                                    <label for="gift_wrap">Подарочная упаковка</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="insurance" name="services" value="insurance">
+                                    <label for="insurance">Страхование доставки</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="delivery_date">Желаемая дата доставки:</label>
+                            <input type="date" id="delivery_date" name="delivery_date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="delivery_time">Время доставки:</label>
+                            <select id="delivery_time" name="delivery_time" required>
+                                <option value="morning">Утро (9:00-12:00)</option>
+                                <option value="day" selected>День (12:00-18:00)</option>
+                                <option value="evening">Вечер (18:00-21:00)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Пароль для отслеживания:</label>
+                            <input type="password" id="password" name="tracking_password" placeholder="Введите пароль"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comments">Комментарии к заказу:</label>
+                            <textarea id="comments" name="comments" rows="4"
+                                placeholder="Особые пожелания, комментарии..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Form Actions -->
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Отправить заказ</button>
+                        <button type="reset" class="btn btn-reset">Очистить форму</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Братский Винил. Все права защищены.</p>
+            <p>Самый свагоый магазин виниловых пластинок в России</p>
+        </div>
+    </footer>
+
+    <script src="../js/order.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оставить отзыв - Брасткий Винил</title>
+  <link rel="stylesheet" href="../css/rewiew.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo"> Брасткий Винил </div>
+            <div class="tagline">Магазин сваговых пластинок</div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="home.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог пластинок</a></li>
+                <li><a href="order.html">Оформить заказ</a></li>
+                <li><a href="rewiew.html" class="active">Оставить отзыв</a></li>
+                <li><a href="inform.html">О магазине</a></li>
+                <li><a href="passport.html">Паспорт</a></li>
+                <li><a href="algoritm.html">Алгоритмическая задача</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-content">
+            <section class="section">
+                <h2>⭐ Оставить отзыв</h2>
+                <p>Поделитесь вашими впечатлениями о покупке виниловых пластинок в нашем магазине. Ваше мнение поможет другим покупателям!</p>
+            </section>
+
+            <!-- Review Examples -->
+            <div class="review-examples">
+                <h3>📝 Примеры хороших отзывов:</h3>
+                <ul>
+                    <li>"ЯПИИ супер класс класс, только мухи и еб.., да рекомендую"</li>
+                    <li>"Буллшит, у меня нет слов боже мой ... себе, не собо рекомендую"</li>
+                    <li>"Нашел редкий экземпляр, о котором давно мечтал. Спасибо!"</li>
+                </ul>
+            </div>
+
+            <!-- Review Form -->
+            <div class="form-container">
+                <form action="https://www.bing.com/search?" method="get" target="_blank" id="reviewForm">
+                    <input type="hidden" name="q" value="search">
+                    <input type="hidden" name="form_type" value="vinyl_review">
+                    
+                    <div class="form-box">
+                        <h3>💬 Форма отзыва</h3>
+                        
+                        <div class="form-group">
+                            <label for="reviewer_name">Ваше имя:</label>
+                            <input type="text" id="reviewer_name" name="reviewer_name" placeholder="Имя" value="" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="review_album">Альбом для отзыва:</label>
+                            <input type="text" id="review_album" name="review_album" placeholder="Пример: Pink Floyd - The Dark Side of the Moon" value="" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Оценка качества звука:</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" id="sound_5" name="sound_quality" value="5" checked>
+                                    <label for="sound_5">ЯПИИ супер класс класс (5/5)</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="sound_4" name="sound_quality" value="4">
+                                    <label for="sound_4">Качественая грязь (4/5)</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="sound_3" name="sound_quality" value="3">
+                                    <label for="sound_3">Норм (3/5)</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="sound_2" name="sound_quality" value="2">
+                                    <label for="sound_2">Буллшит (2/5)</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="sound_1" name="sound_quality" value="1">
+                                    <label for="sound_1"> У меня нет слов боже мой ... себе (1/5)</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Оценка состояния пластинки:</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" id="condition_5" name="vinyl_condition" value="5" checked>
+                                    <label for="condition_5"> ЯПИИИ (5/5)</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="condition_4" name="vinyl_condition" value="4">
+                                    <label for="condition_4"> Только мухи и еб.. (4/5)</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="condition_3" name="vinyl_condition" value="3">
+                                    <label for="condition_3"> Годно (3/5)</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="condition_2" name="vinyl_condition" value="2">
+                                    <label for="condition_2"> Буллшит (2/5)</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="condition_1" name="vinyl_condition" value="1">
+                                    <label for="condition_1"> У меня нет слов боже мой ... себе (1/5)</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Рекомендуете ли вы эту пластинку?</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" id="recommend_yes" name="recommend" value="yes" checked>
+                                    <label for="recommend_yes">Да, рекомендую</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="recommend_no" name="recommend" value="no">
+                                    <label for="recommend_no">Нет, не рекомендую</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Дополнительные услуги (если использовали):</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="service_cleaning" name="used_services" value="cleaning">
+                                    <label for="service_cleaning">Профессиональная чистка</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="service_delivery" name="used_services" value="express_delivery">
+                                    <label for="service_delivery">Экспресс-доставка</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="service_gift" name="used_services" value="gift_wrap">
+                                    <label for="service_gift">Подарочная упаковка</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="service_consult" name="used_services" value="consultation">
+                                    <label for="service_consult">Консультация специалиста</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="purchase_date">Дата покупки:</label>
+                            <input type="date" id="purchase_date" name="purchase_date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="review_text">Текст отзыва:</label>
+                            <textarea id="review_text" name="review_text" rows="5" placeholder="Поделитесь вашими впечатлениями..." required> </textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="rating">Общая оценка (1-10):</label>
+                            <input type="number" id="rating" name="rating" min="1" max="10" value="8" required>
+                        </div>
+
+                        
+
+                        <!-- Form Actions -->
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Отправить отзыв</button>
+                            <button type="reset" class="btn btn-reset">Очистить форму</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Братский Винил. Все права защищены.</p>
+            <p>Самый сваговый магазин виниловых пластинок в России</p>
+        </div>
+    </footer>
+
+   <script src="../js/rewiew.js"></script>
+</body>
+</html>
